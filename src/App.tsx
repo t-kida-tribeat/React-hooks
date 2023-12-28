@@ -2,7 +2,7 @@ import './App.css'
 import { useContext, useEffect, useState, useRef, useReducer } from 'react'
 import context from './main'
 
-const reducer = (state, action) => {
+const reducer = (state:number, action:{type:string}) => {
   switch (action.type) {
     case 'increment':
       return state + 10
